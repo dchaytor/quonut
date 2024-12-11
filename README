@@ -1,0 +1,19 @@
+........................................
+......      quonut/quonut.c      .......
+........................................
+
+generates a spinning torus and continuously prints it to the screen until user
+exits program (halts if editing parameters). rotations are computed using 
+quaternions, but can be prescribed by the user in terms of roll/pitch/yaw
+[RPY] (euler angles).
+
+shape defaults to torus, but new functions can be defined by users in the form
+z = f(x, y). functions are defined within the program api, and are stored in
+shape.h. 
+
+takes no input parameters.
+
+usage:
+  ./quonut
+
+	launches the application in a new terminal
